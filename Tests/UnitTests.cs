@@ -41,17 +41,17 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_Valid_Poggemeyer()
         {
-            Assert.AreEqual(3, Program.Subtract("1", "2"));
-            Assert.AreEqual(5, Program.Subtract("3", "2"));
-            Assert.AreEqual(12, Program.Subtract("5", "7"));
+            Assert.AreEqual(-1, Program.Subtract("1", "2"));
+            Assert.AreEqual(1, Program.Subtract("3", "2"));
+            Assert.AreEqual(-2, Program.Subtract("5", "7"));
         }
 
         [Test]
         public void Multiply_Valid_Poggemeyer()
         {
-            Assert.AreEqual(3, Program.Multiply("1", "2"));
-            Assert.AreEqual(5, Program.Multiply("3", "2"));
-            Assert.AreEqual(12, Program.Multiply("5", "7"));
+            Assert.AreEqual(2, Program.Multiply("1", "2"));
+            Assert.AreEqual(6, Program.Multiply("3", "2"));
+            Assert.AreEqual(35, Program.Multiply("5", "7"));
         }
 
         [Test]
@@ -59,7 +59,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(2, Program.Divide("4", "2"));
             Assert.AreEqual(6, Program.Divide("36", "6"));
-            Assert.AreEqual(10, Program.Divide"100", "10"));
+            Assert.AreEqual(10, Program.Divide("100", "10")); 
         }
 
         [Test]
@@ -69,7 +69,5 @@ namespace GithubActionsLab
             Assert.AreEqual(9, Program.Power("3", "2"));
             Assert.AreEqual(78125, Program.Power("5", "7"));
         }
-
-        // Implement 3 tests per operation, following a similar pattern as above
     }
 }
